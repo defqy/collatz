@@ -1,11 +1,11 @@
-﻿#include <iostream>
+#include <iostream>
 #include <fstream>
 typedef long long ll;
 using namespace std;
 
 int main() {
 	
-	string name, path = "C:/Folder/Programming/collatz/data/input/";
+	string name, path = "C:/path/collatz/data/input/";
 
 	cin >> name;
 	
@@ -18,7 +18,7 @@ int main() {
 	ofstream data;
 	ofstream config;
 
-	config.open("C:/Folder/Programming/collatz/apps/config/config.txt");
+	config.open("C:/path/collatz/apps/config/config.txt");
 
 	config << name << endl;
 
@@ -78,7 +78,7 @@ int main() {
 
 	data.close();
 
-	system("C:\\Folder\\Programming\\collatz\\apps\\plot\\plot.exe");
+	system("C:\\path\\collatz\\apps\\plot\\plot.exe");
 
 	return 0;
 
